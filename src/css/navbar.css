@@ -18,7 +18,7 @@
   margin: 0;
   font-size: 30px;
   font-weight: 800;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: "Fredoka One", sans-serif;
   cursor: pointer;
 }
 
@@ -57,7 +57,7 @@
   border-radius: 30px;
   font-weight: 700;
   color: #1e3a8a;
-  border: 1px solid rgba(255,255,255,0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   cursor: pointer;
 }
 
@@ -118,7 +118,7 @@
   margin: 0;
   font-size: 30px;
   font-weight: 800;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -151,12 +151,22 @@
 }
 
 /* Assign unique fun colors to different menu items when hovered */
-.nav-links-container .nav-item-link:nth-child(1):hover { color: #ff5722; } /* Home - Orange */
-.nav-links-container .nav-item-link:nth-child(2):hover { color: #4caf50; } /* Shop - Green */
-.nav-links-container .nav-item-link:nth-child(3):hover { color: #ffeb3b; text-shadow: 0 2px 4px rgba(0,0,0,0.1); } /* About - Yellow */
-.nav-links-container .nav-item-link:nth-child(4):hover { color: #9c27b0; } /* Testimonials - Purple */
-.nav-links-container .nav-item-link:nth-child(5):hover { color: #00bcd4; } /* Contact - Cyan */
-
+.nav-links-container .nav-item-link:nth-child(1):hover {
+  color: #ff5722;
+} /* Home - Orange */
+.nav-links-container .nav-item-link:nth-child(2):hover {
+  color: #4caf50;
+} /* Shop - Green */
+.nav-links-container .nav-item-link:nth-child(3):hover {
+  color: #ffeb3b;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} /* About - Yellow */
+.nav-links-container .nav-item-link:nth-child(4):hover {
+  color: #9c27b0;
+} /* Testimonials - Purple */
+.nav-links-container .nav-item-link:nth-child(5):hover {
+  color: #00bcd4;
+} /* Contact - Cyan */
 
 /* 4. Shaking Cart Bag Button */
 .cart-bag-btn {
@@ -192,29 +202,65 @@
   /* Make the bubble number pop out */
   animation: pulseBubble 2s infinite;
 }
-
-
-/* ==========================================================================
-   🦄 KEYFRAMES FOR THE ANIMATIONS
-   ========================================================================== */
-
-/* Logo Shaking */
 @keyframes logoWiggle {
-  0% { transform: rotate(-3deg); }
-  100% { transform: rotate(3deg); }
+  0% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
 }
-
-/* Jelly Button Bounce */
 @keyframes jellyPop {
-  0%, 100% { transform: scale(1); }
-  30% { transform: scale(1.12, 0.85); } /* Squishes down */
-  50% { transform: scale(0.9, 1.1); }   /* Stretches up */
-  80% { transform: scale(1.05, 0.95); } /* settles down */
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.12, 0.85);
+  } /* Squishes down */
+  50% {
+    transform: scale(0.9, 1.1);
+  } /* Stretches up */
+  80% {
+    transform: scale(1.05, 0.95);
+  } /* settles down */
 }
-
-/* Pulsing Notification Badge */
 @keyframes pulseBubble {
-  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
-  70% { transform: scale(1.15); box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); }
-  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@media (max-width: 768px) {
+  .glass-navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .nav-links-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-item-link {
+    font-size: 14px;
+  }
+
+  .cart-bag-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 20px;
+  }
 }
