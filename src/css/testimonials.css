@@ -1,0 +1,74 @@
+.testimonial-title {
+  font-size: 2.8rem;
+  color: #1e3a8a;
+  font-weight: 900;
+  margin: 10px 0 50px 0;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 40px 30px;
+  border-radius: 35px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.quote-mark {
+  font-size: 60px;
+  color: #ec4899;
+  opacity: 0.2;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: serif;
+}
+
+.review-text {
+  color: #1e3a8a;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.review-stars {
+  margin-bottom: 20px;
+}
+
+.user-info h4 {
+  color: #1e3a8a;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.user-info p {
+  color: #ec4899;
+  font-size: 12px;
+  font-weight: 800;
+  margin: 3px 0 0 0;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Fredoka', 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #0b35deb9 0%, #fff3fc 40%, #c30aa161 100%);
+  background-attachment: fixed; /* Keeps the gradient static while scrolling */
+  color: #1e3a8a;
+  overflow-x: hidden;
+}

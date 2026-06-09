@@ -1,0 +1,98 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Fredoka', 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #0b35deb9 0%, #fff3fc 40%, #c30aa161 100%);
+  background-attachment: fixed; /* Keeps the gradient static while scrolling */
+  color: #1e3a8a;
+  overflow-x: hidden;
+}
+
+.premium-page-container {
+  min-height: 85vh;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.glass-hero-banner {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 50px;
+  border-radius: 40px;
+  text-align: center;
+  max-width: 900px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+  margin-bottom: 60px;
+}
+.premium-badge {
+  background: rgba(236, 72, 153, 0.1);
+  color: #ec4899;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.premium-page-title {
+  font-size: 3rem;
+  color: #1e3a8a;
+  font-weight: 900;
+  margin: 0 0 15px 0;
+}
+.text-gradient {
+  background: linear-gradient(45deg, #ec4899, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text; /* 💡 இந்த ஸ்டாண்டர்ட் ப்ராப்பர்ட்டிய புதுசா ஆட் பண்ணிக்கோ மாப்ள */
+  -webkit-text-fill-color: transparent;
+}
+.premium-page-subtitle {
+  color: #4b5563;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.shop-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+}
+.feature-glass-card {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 35px 25px;
+  border-radius: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-glass-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(30, 58, 138, 0.05);
+  background: rgba(255, 255, 255, 0.45);
+}
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.feature-glass-card h3 {
+  color: #1e3a8a;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+}
+.feature-glass-card p {
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}

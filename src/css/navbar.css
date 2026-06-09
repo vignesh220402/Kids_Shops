@@ -1,0 +1,220 @@
+.glass-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.navbar-logo {
+  color: #ec4899;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'Fredoka One', sans-serif;
+  cursor: pointer;
+}
+
+.logo-blue {
+  color: #1e3a8a;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-item-link {
+  color: #1e3a8a;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-item-link:hover {
+  color: #ec4899;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.offer-menu-badge {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  color: #1e3a8a;
+  border: 1px solid rgba(255,255,255,0.8);
+  cursor: pointer;
+}
+
+.cart-bag-btn {
+  background: rgba(236, 72, 153, 0.85);
+  color: white;
+  padding: 12px 26px;
+  border-radius: 40px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 32px 0 rgba(236, 72, 153, 0.2);
+  cursor: pointer;
+}
+
+.cart-text a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.cart-badge-count {
+  background: #ffffff;
+  color: #ec4899;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 900;
+}
+/* ==========================================================================
+   ✨ KIDSZONE MAGICAL NAVBAR ANIMATIONS
+   ========================================================================== */
+
+/* 1. Global Navbar Setup */
+.glass-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.04);
+}
+
+/* 2. Logo Wiggle Effect */
+.navbar-logo {
+  color: #ec4899;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'Fredoka', sans-serif;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  /* Gently shakes like a toy when hovered */
+  animation: logoWiggle 0.5s ease-in-out infinite alternate;
+}
+
+/* 3. Playful Bouncy Navigation Links */
+.nav-links-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-item-link {
+  color: #1e3a8a;
+  font-weight: 800;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Gives it an elastic, springy pop! */
+}
+
+/* Make each link float up and turn into a kid-friendly color on hover */
+.nav-item-link:hover {
+  transform: translateY(-6px) scale(1.15); /* Pops up like a balloon */
+}
+
+/* Assign unique fun colors to different menu items when hovered */
+.nav-links-container .nav-item-link:nth-child(1):hover { color: #ff5722; } /* Home - Orange */
+.nav-links-container .nav-item-link:nth-child(2):hover { color: #4caf50; } /* Shop - Green */
+.nav-links-container .nav-item-link:nth-child(3):hover { color: #ffeb3b; text-shadow: 0 2px 4px rgba(0,0,0,0.1); } /* About - Yellow */
+.nav-links-container .nav-item-link:nth-child(4):hover { color: #9c27b0; } /* Testimonials - Purple */
+.nav-links-container .nav-item-link:nth-child(5):hover { color: #00bcd4; } /* Contact - Cyan */
+
+
+/* 4. Shaking Cart Bag Button */
+.cart-bag-btn {
+  background: rgba(236, 72, 153, 0.85);
+  color: white;
+  padding: 12px 26px;
+  border-radius: 40px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 32px 0 rgba(236, 72, 153, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cart-bag-btn:hover {
+  /* Dynamic shake animation to excite kids when they want to shop */
+  animation: jellyPop 0.6s ease-in-out infinite;
+}
+
+.cart-badge-count {
+  background: #ffffff;
+  color: #ec4899;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 900;
+  /* Make the bubble number pop out */
+  animation: pulseBubble 2s infinite;
+}
+
+
+/* ==========================================================================
+   🦄 KEYFRAMES FOR THE ANIMATIONS
+   ========================================================================== */
+
+/* Logo Shaking */
+@keyframes logoWiggle {
+  0% { transform: rotate(-3deg); }
+  100% { transform: rotate(3deg); }
+}
+
+/* Jelly Button Bounce */
+@keyframes jellyPop {
+  0%, 100% { transform: scale(1); }
+  30% { transform: scale(1.12, 0.85); } /* Squishes down */
+  50% { transform: scale(0.9, 1.1); }   /* Stretches up */
+  80% { transform: scale(1.05, 0.95); } /* settles down */
+}
+
+/* Pulsing Notification Badge */
+@keyframes pulseBubble {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
+  70% { transform: scale(1.15); box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}

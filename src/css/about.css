@@ -1,0 +1,71 @@
+.about-glass-card {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 60px;
+  border-radius: 40px;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.02);
+}
+
+.about-glass-card h2 {
+  font-size: 2.8rem;
+  color: #1e3a8a;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.about-lead {
+  font-size: 1.2rem;
+  color: #1e3a8a;
+  font-weight: 700;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.about-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(30, 58, 138, 0.2), transparent);
+  margin: 40px 0;
+}
+
+.about-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.stat-box h4 {
+  font-size: 2.2rem;
+  color: #ec4899;
+  font-weight: 900;
+  margin: 0;
+}
+
+.stat-box p {
+  color: #1e3a8a;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 5px 0 0 0;
+}
+
+.about-details {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 600;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Fredoka', 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #0b35deb9 0%, #fff3fc 40%, #c30aa161 100%);
+  background-attachment: fixed; /* Keeps the gradient static while scrolling */
+  color: #1e3a8a;
+  overflow-x: hidden;
+}
